@@ -1,0 +1,36 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+
+
+.header {
+    @include flexCenter;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85%;
+    background-color: $third-color;
+
+    &__intro {
+        font-size: 23px;
+        font-weight: 500;
+        color: $fourth-color;
+        margin: 70px 10% 2% 10%;
+    }
+
+    &__intro2 {
+        font-size: 50px;
+        margin: 0 10% 0 10%;
+    }
+    
+    &__button-projects {
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 10% 10% 70px 10%;
+        padding: 5% 10%;
+        align-self: center;
+        border: 2px solid $secondary-color;
+        border-radius: 8px;
+        background-color: $primary-color;
+        box-shadow: 5px 5px;
+    }
+}

@@ -1,17 +1,24 @@
 @use "./variables" as *;
 @use "./mixin" as *;
 
+/*--------------- NAVIGATION -----------------*/
+
 nav {
     @include flexPush;
     padding: 15px;
+    font-size: 35px;
     //background-color: ;
 
     .name-icon {
         @include flexCenter;
         
         h1 {
-            padding: 0 0 0 10px;
+            padding: 0 0 0 15px;
             //font-family: ;
+        }
+        
+        .fa-code {
+            color: $primary-color;
         }
     }
 }

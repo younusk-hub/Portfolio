@@ -1,0 +1,9 @@
+@use "./mixin" as *;
+
+/*--------------- MAIN (CONTAINER) ---------------*/
+
+main {
+    @include flexCenter;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+}
