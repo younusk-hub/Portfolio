@@ -1,0 +1,25 @@
+/*--------------- FONTS --------------- */
+/*--------------- COLORS --------------- */
+/*---------------- FLEXBOX ----------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+nav .name-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .name-icon h1 {
+  padding: 0 0 0 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  font-size: 25px;
+  background-color: #91BAD6;
+  color: #183153;
+}/*# sourceMappingURL=styles.css.map */
