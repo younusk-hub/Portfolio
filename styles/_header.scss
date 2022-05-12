@@ -1,14 +1,13 @@
 @use "./variables" as *;
 @use "./mixin" as *;
 
-
-
 .header {
     @include flexCenter;
     flex-direction: column;
     align-items: flex-start;
     width: 85%;
     background-color: $third-color;
+    margin-bottom: 20px;
 
     &__intro {
         font-size: 23px;

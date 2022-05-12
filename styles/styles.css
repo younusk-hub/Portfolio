@@ -36,6 +36,7 @@ nav .name-icon .fa-code {
   align-items: flex-start;
   width: 85%;
   background-color: #F8FAFA;
+  margin-bottom: 20px;
 }
 .header__intro {
   font-size: 23px;
