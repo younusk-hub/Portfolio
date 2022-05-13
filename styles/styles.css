@@ -132,7 +132,7 @@ nav .name-icon .fa-code {
 }
 
 /*----------------------- MY PROJECTS ---------------------------*/
-.projects {
+.my-projects {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,10 +140,47 @@ nav .name-icon .fa-code {
   width: 85%;
   background-color: #F8FAFA;
   margin: 10px 0;
+  /*-------- PROJECTS --------*/
 }
-.projects__title {
+.my-projects__title {
   padding: 40px;
   font-size: 30px;
+}
+.my-projects #project4, .my-projects #project5, .my-projects #project6 {
+  display: none;
+}
+.my-projects .project {
+  font-size: 18px;
+  padding: 0 5% 20px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.my-projects .project__image {
+  width: 97%;
+}
+.my-projects .project__skills {
+  align-self: flex-start;
+  padding: 10px;
+  text-decoration: none;
+  color: #50e2e4;
+}
+.my-projects .project__title {
+  align-self: flex-start;
+  font-size: 30px;
+  padding: 0 0 10px 10px;
+}
+.my-projects .project__info {
+  padding: 0 0 10px 10px;
+}
+.my-projects .project__code-preview {
+  align-self: flex-start;
+  padding: 0 0 10px 10px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*--------------- MAIN (CONTAINER) ---------------*/

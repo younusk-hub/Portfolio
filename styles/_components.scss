@@ -7,9 +7,7 @@
     @include flexCenter;
     flex-direction: column;
     align-items: flex-start;
-    width: 85%;
-    background-color: $third-color;
-    margin: 10px 0;
+    @include newComp;
 
     &__intro {
         font-size: 23px;
@@ -34,7 +32,6 @@
         background-color: $primary-color;
         box-shadow: 5px 5px;
         text-decoration: none;
-
     }
 }
 
@@ -43,9 +40,7 @@
 .about-me {
     @include flexCenter;
     flex-direction: column;
-    width: 85%;
-    background-color: $third-color;
-    margin: 10px 0;
+    @include newComp;
 
     &__title {
         padding: 40px;
@@ -68,9 +63,7 @@
 .skills {
     @include flexCenter;
     flex-direction: column;
-    width: 85%;
-    background-color: $third-color;
-    margin: 10px 0;
+    @include newComp;
 
     &__title {
         padding: 40px;
@@ -115,17 +108,54 @@
 
 /*----------------------- MY PROJECTS ---------------------------*/
 
-.projects {
+.my-projects {
     @include flexCenter;
     flex-direction: column;
-    width: 85%;
-    background-color: $third-color;
-    margin: 10px 0;
+    @include newComp;
 
     &__title {
         padding: 40px;
         font-size: 30px;
     }
 
+    #project4, #project5, #project6 {
+        display: none;
+    }
 
+    /*-------- PROJECTS --------*/
+
+    .project {
+        font-size: 18px;
+        padding: 0 5% 20px 5%;
+        @include flexCenter;
+        flex-direction: column;
+
+        &__image {
+            width: 97%;  
+        }
+
+        &__skills {
+            align-self: flex-start;
+            padding: 10px;
+            text-decoration: none;
+            color: $primary-color;
+        }
+
+        &__title {
+            align-self: flex-start;
+            font-size: 30px;
+            padding: 0 0 10px 10px;
+        }
+
+        &__info {
+            padding: 0 0 10px 10px;
+        }
+
+        &__code-preview {
+            align-self: flex-start;
+            padding: 0 0 10px 10px;
+            width: 60%;
+            @include flexPush
+        }
+    }
 }
