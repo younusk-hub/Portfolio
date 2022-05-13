@@ -1,0 +1,114 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+/*--------------------- HEADER---------------------*/
+
+.header {
+    @include flexCenter;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85%;
+    background-color: $third-color;
+    margin: 10px 0;
+
+    &__intro {
+        font-size: 23px;
+        font-weight: 500;
+        color: $fourth-color;
+        margin: 70px 10% 0 10%;
+    }
+
+    &__intro2 {
+        font-size: 50px;
+        margin: 0 10% 0 10%;
+    }
+    
+    &__button-projects {
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 10% 10% 70px 10%;
+        padding: 5% 10%;
+        align-self: center;
+        border: 2px solid $secondary-color;
+        border-radius: 8px;
+        background-color: $primary-color;
+        box-shadow: 5px 5px;
+    }
+}
+
+/*-------------------- ABOUT ME ---------------------*/
+
+.about-me {
+    @include flexCenter;
+    flex-direction: column;
+    width: 85%;
+    background-color: $third-color;
+    margin: 10px 0;
+
+    &__title {
+        padding: 40px;
+        font-size: 30px;
+    }
+
+    &__image {
+        width: 300px;
+        padding-bottom: 40px;
+    }
+
+    &__info {
+        font-size: 18px;
+        padding: 0 5% 20px 5%;
+    }
+}
+
+/*--------------- TECHNICAL SKILLS -------------------*/
+
+.skills {
+    @include flexCenter;
+    flex-direction: column;
+    width: 85%;
+    background-color: $third-color;
+    margin: 10px 0;
+
+    .tech-skills {
+        padding: 40px;
+        font-size: 30px;
+    }
+
+    .skills-container {
+        
+        width: 85%;
+        padding-bottom: 40px;
+
+        .icons  {
+            @include flexCenter;
+            font-size: 30px;
+            color: $secondary-color;
+            height: 30px;
+        }
+        .svg-icon {
+            @include flexCenter;   
+            flex-direction: column;
+            fill: $secondary-color;
+        }
+
+        .icons-name {
+            @include flexCenter;
+            font-size: 15px;
+            color: $secondary-color; 
+            padding-top: 10px;
+        }
+
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 50px 10px; 
+        grid-template-areas: 
+        "github-icon html-icon css-icon"
+        "js-icon scss-icon bem-icon"
+        "react-icon java-icon springboot-icon"
+        "python-icon swift-icon sql-icon";
+    }
+}
+
+

@@ -7,7 +7,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  font-size: 35px;
+  font-size: 25px;
 }
 nav .name-icon {
   display: flex;
@@ -24,10 +24,10 @@ nav .name-icon .fa-code {
 * {
   margin: 0;
   padding: 0%;
-  font-size: 25px;
   color: #272643;
 }
 
+/*--------------------- HEADER---------------------*/
 .header {
   display: flex;
   justify-content: center;
@@ -36,13 +36,13 @@ nav .name-icon .fa-code {
   align-items: flex-start;
   width: 85%;
   background-color: #F8FAFA;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 .header__intro {
   font-size: 23px;
   font-weight: 500;
   color: #8C9DB1;
-  margin: 70px 10% 2% 10%;
+  margin: 70px 10% 0 10%;
 }
 .header__intro2 {
   font-size: 50px;
@@ -60,11 +60,81 @@ nav .name-icon .fa-code {
   box-shadow: 5px 5px;
 }
 
+/*-------------------- ABOUT ME ---------------------*/
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  background-color: #F8FAFA;
+  margin: 10px 0;
+}
+.about-me__title {
+  padding: 40px;
+  font-size: 30px;
+}
+.about-me__image {
+  width: 300px;
+  padding-bottom: 40px;
+}
+.about-me__info {
+  font-size: 18px;
+  padding: 0 5% 20px 5%;
+}
+
+/*--------------- TECHNICAL SKILLS -------------------*/
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  background-color: #F8FAFA;
+  margin: 10px 0;
+}
+.skills .tech-skills {
+  padding: 40px;
+  font-size: 30px;
+}
+.skills .skills-container {
+  width: 85%;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 50px 10px;
+  grid-template-areas: "github-icon html-icon css-icon" "js-icon scss-icon bem-icon" "react-icon java-icon springboot-icon" "python-icon swift-icon sql-icon";
+}
+.skills .skills-container .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #272643;
+  height: 30px;
+}
+.skills .skills-container .svg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  fill: #272643;
+}
+.skills .skills-container .icons-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #272643;
+  padding-top: 10px;
+}
+
 /*--------------- MAIN (CONTAINER) ---------------*/
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
 }/*# sourceMappingURL=styles.css.map */

@@ -12,7 +12,8 @@
 
 <body>
 
-    <!-------------------- NAVIGATION -------------------------->
+    <!--------------------- NAVIGATION -------------------------->
+
     <nav>
         <div class="name-icon">
             <i class="fa-solid fa-code"></i>
@@ -23,10 +24,12 @@
         </div>
     </nav>
 
-    <!----------------------- MAIN --------------------------->
+    <!------------------------ MAIN ---------------------------->
+
     <main>
 
         <!---------- HEADER ---------->
+
         <header class="header">
             <p class="header__intro">Hey! I'm Younus Khan</p>
             <h2 class="header__intro2">A Junior Software Developer based in the UK</h2>
@@ -37,21 +40,108 @@
         </header>
 
         <!--------- ABOUT ME ---------->
+
         <section class="about-me">
             <h3 class="about-me__title">About Me</h3>
             <img class="about-me__image" src="./images/Screenshot 2022-05-12 at 16.58.54.png" alt="A picture of Younus">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minus, praesentium quam culpa consequatur
+            <p class="about-me__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minus, praesentium
+                quam culpa consequatur
                 quibusdam laudantium? Alias quam ipsum odio, mollitia nobis doloribus animi delectus, explicabo
                 distinctio corporis iusto voluptatum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
                 atque modi delectus? Voluptatum vero corrupti atque impedit amet dolores error ab voluptatibus eaque
                 repellendus! Ratione eum inventore laudantium perferendis modi?</p>
         </section>
 
-        
+        <!------ TECHNICAL SKILLS ------>
+
+        <section class="skills">
+            <h3 class="tech-skills">Technical Skills</h3>
+
+            <div class="skills-container">
+                <div class="github-icon">
+                    <i class="icons fa-brands fa-git-alt"></i>
+                    <p class="icons-name">Github</p>
+                </div>
+                <div class="html-icon">
+                    <i class="icons fa-brands fa-html5"></i>
+                    <p class="icons-name">HTML5</p>
+                </div>
+                <div class="css-icon">
+                    <i class="icons fa-brands fa-css3-alt"></i>
+                    <p class="icons-name">CSS3</p>
+                </div>
+                <div class="js-icon">
+                    <i class="icons fa-brands fa-js-square"></i>
+                    <p class="icons-name">JavaScript</p>
+                </div>
+                <div class="scss-icon">
+                    <i class="icons fa-brands fa-sass"></i>
+                    <p class="icons-name">SCSS</p>
+                </div>
+                <div class="bem-icon svg-icon">
+                    <svg class="icons" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 10.3319H15.4301V15.8951H0V10.3319ZM0 0H15.4301V5.56321H0V0ZM27.6839 20.5842H0V26.1474H26.6465C29.5639 26.1474 36.3712 26.2267 38.8998 31.2337V28.1343C37.668 23.2066 34.0374 20.5842 27.6836 20.5842H27.6839ZM27.7484 30.9158H0V36.479H26.6465C33.1297 36.479 37.2142 36.7969 38.8998 37.9097V35.4458C37.603 31.5516 32.1572 30.9158 27.7486 30.9158H27.7484ZM27.6839 57.1425H0V51.5793H26.6465C29.5639 51.5793 36.3712 51.4999 38.8998 46.4929V49.5923C37.668 54.52 34.0374 57.1425 27.6836 57.1425H27.6839ZM27.7484 46.8109H0V41.2477H26.6465C33.1297 41.2477 37.2142 40.9297 38.8998 39.817V42.2808C37.603 46.175 32.1572 46.8109 27.7486 46.8109H27.7484ZM45.6424 66.7592H66V63.3415H46.2258C44.4752 63.3415 40.3263 63.2622 38.8351 60.3215V62.2291C39.5482 65.1695 41.7525 66.7592 45.6424 66.7592ZM45.5776 60.4805H65.9353V57.0631H46.2258C42.2709 57.0631 39.8073 56.9042 38.8348 56.189V57.699C39.6126 60.0832 42.9191 60.4805 45.5774 60.4805H45.5776Z"
+                            fill="#272643" />
+                    </svg>
+                    <p class="icons-name">BEM</p>
+                </div>
+                <div class="react-icon">
+                    <i class="icons fa-brands fa-react"></i>
+                    <p class="icons-name">React</p>
+                </div>
+                <div class="java-icon">
+                    <i class="icons fa-brands fa-java"></i>
+                    <p class="icons-name">Java</p>
+                </div>
+                <div class="springboot-icon svg-icon">
+                    <svg class="icons" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M54.615 44.176C47.208 54.043 31.392 50.713 21.249 51.19C21.249 51.19 19.452 51.292 17.646 51.589C17.646 51.589 18.33 51.298 19.203 50.995C26.325 48.532 29.691 48.037 34.02 45.814C42.15 41.65 50.244 32.575 51.891 23.149C48.795 32.215 39.381 40.018 30.81 43.186C24.945 45.352 14.334 47.458 14.331 47.458C14.1868 47.3842 14.0438 47.3082 13.902 47.23C6.687 43.72 6.477 28.09 19.584 23.053C25.332 20.845 30.825 22.057 37.038 20.578C43.662 19.003 51.336 14.038 54.453 7.54603C57.948 17.92 62.148 34.144 54.615 44.176ZM54.741 4.33603C53.903 6.34527 52.8306 8.24846 51.546 10.006C48.7535 7.12796 45.4115 4.84008 41.7181 3.27809C38.0246 1.71611 34.0551 0.91185 30.045 0.913026C13.476 0.913026 3.28287e-06 14.389 3.28287e-06 30.955C-0.00193143 35.0873 0.8513 39.1753 2.50603 42.9618C4.16075 46.7483 6.58116 50.1514 9.615 52.957L10.275 53.539C9.79394 53.0572 9.52393 52.404 9.52435 51.7231C9.52477 51.0422 9.79559 50.3893 10.2773 49.9081C10.7589 49.4268 11.412 49.1565 12.0929 49.1567C12.7738 49.1568 13.4267 49.4274 13.9082 49.9088C14.3897 50.3903 14.6602 51.0433 14.6604 51.7241C14.6605 52.405 14.3902 53.0581 13.909 53.5398C13.4277 54.0214 12.7748 54.2923 12.0939 54.2927C11.4131 54.2931 10.7599 54.0231 10.278 53.542L10.725 53.938C16.1262 58.5044 22.9722 61.0068 30.045 61C45.879 61 58.884 48.676 59.997 33.124C60.819 25.507 58.569 15.835 54.741 4.33603Z"
+                            fill="#272643" />
+                    </svg>
+                    <p class="icons-name">Spring Boot</p>
+                </div>
+                <div class="python-icon">
+                    <i class="icons fa-brands fa-python"></i>
+                    <p class="icons-name">Python</p>
+                </div>
+                <div class="swift-icon">
+                    <i class="icons fa-brands fa-swift"></i>
+                    <p class="icons-name">Swift</p>
+                </div>
+                <div class="sql-icon svg-icon">
+                    <svg class="icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 548.29 548.291"
+                        style="enable-background:new 0 0 548.29 548.291;" xml:space="preserve">
+                        <path d="M276.043,244.216c-24.575,0-38.741,24.087-38.741,53.862c-0.241,30.228,14.407,53.382,38.5,53.382
+                    c24.323,0,38.512-22.92,38.512-54.091C314.313,268.303,300.604,244.216,276.043,244.216z" />
+                        <path d="M486.2,196.116h-13.164V132.59c0-0.399-0.064-0.795-0.116-1.2c-0.021-2.52-0.824-4.997-2.551-6.96L364.656,3.677
+                    c-0.031-0.031-0.064-0.044-0.085-0.075c-0.629-0.704-1.364-1.29-2.141-1.796c-0.231-0.154-0.462-0.283-0.704-0.419
+                    c-0.672-0.365-1.386-0.672-2.121-0.893c-0.199-0.052-0.377-0.134-0.576-0.186C358.229,0.118,357.4,0,356.562,0H96.757
+                    C84.893,0,75.256,9.649,75.256,21.502v174.613H62.093c-16.967,0-30.733,13.756-30.733,30.733v159.812
+                    c0,16.961,13.766,30.731,30.733,30.731h13.163V526.79c0,11.854,9.637,21.501,21.501,21.501h354.777
+                    c11.853,0,21.502-9.647,21.502-21.501V417.392H486.2c16.977,0,30.729-13.771,30.729-30.731V226.849
+                    C516.93,209.872,503.177,196.116,486.2,196.116z M96.757,21.502h249.053v110.006c0,5.943,4.818,10.751,10.751,10.751h94.973
+                    v53.861H96.757V21.502z M353.033,376.96l-10.394,27.884c-22.666-6.619-41.565-13.479-62.828-22.445
+                    c-3.527-1.418-7.317-2.132-11.094-2.362c-35.909-2.352-69.449-28.819-69.449-80.778c0-47.711,30.236-83.623,77.71-83.623
+                    c48.675,0,75.351,36.854,75.351,80.317c0,36.142-16.766,61.638-37.785,71.091v0.945
+                    C326.828,371.528,340.519,374.367,353.033,376.96z M72.912,370.116l7.328-29.764c9.69,4.96,24.554,9.915,39.917,9.915
+                    c16.525,0,25.271-6.84,25.271-17.228c0-9.928-7.56-15.597-26.691-22.442c-26.457-9.217-43.696-23.858-43.696-47.014
+                    c0-27.163,22.68-47.948,60.231-47.948c17.954,0,31.184,3.791,40.623,8.03l-8.021,29.061c-6.375-3.076-17.711-7.564-33.3-7.564
+                    c-15.599,0-23.163,7.079-23.163,15.357c0,10.15,8.977,14.646,29.533,22.447c28.108,10.394,41.332,25.023,41.332,47.464
+                    c0,26.699-20.557,49.365-64.253,49.365C99.844,379.785,81.899,375.06,72.912,370.116z M451.534,520.962H96.757v-103.57h354.777
+                    V520.962z M475.387,377.428h-99.455V218.231h36.158v128.97h63.297V377.428z" />
+                    </svg>
+                    <p class="icons-name">SQL</p>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <!----------------------- FOOTER ------------------------>
+    <!------------------------ FOOTER ----------------------------->
+
     <footer>
 
 
