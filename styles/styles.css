@@ -27,7 +27,7 @@ nav .name-icon .fa-code {
   color: #272643;
 }
 
-/*--------------------- HEADER---------------------*/
+/*--------------------- HEADER ---------------------*/
 .header {
   display: flex;
   justify-content: center;
@@ -94,7 +94,7 @@ nav .name-icon .fa-code {
   background-color: #F8FAFA;
   margin: 10px 0;
 }
-.skills .tech-skills {
+.skills__title {
   padding: 40px;
   font-size: 30px;
 }
@@ -129,6 +129,21 @@ nav .name-icon .fa-code {
   font-size: 15px;
   color: #272643;
   padding-top: 10px;
+}
+
+/*----------------------- MY PROJECTS ---------------------------*/
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  background-color: #F8FAFA;
+  margin: 10px 0;
+}
+.projects__title {
+  padding: 40px;
+  font-size: 30px;
 }
 
 /*--------------- MAIN (CONTAINER) ---------------*/

@@ -1,7 +1,7 @@
 @use "./variables" as *;
 @use "./mixin" as *;
 
-/*--------------------- HEADER---------------------*/
+/*--------------------- HEADER ---------------------*/
 
 .header {
     @include flexCenter;
@@ -72,7 +72,7 @@
     background-color: $third-color;
     margin: 10px 0;
 
-    .tech-skills {
+    &__title {
         padding: 40px;
         font-size: 30px;
     }
@@ -113,4 +113,19 @@
     }
 }
 
+/*----------------------- MY PROJECTS ---------------------------*/
 
+.projects {
+    @include flexCenter;
+    flex-direction: column;
+    width: 85%;
+    background-color: $third-color;
+    margin: 10px 0;
+
+    &__title {
+        padding: 40px;
+        font-size: 30px;
+    }
+
+
+}
