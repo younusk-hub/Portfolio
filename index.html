@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <!------------------------ MAIN ---------------------------->
+    <!------------------------ MAIN ----------------------------->
 
     <main>
 
@@ -33,10 +33,10 @@
         <header class="header">
             <p class="header__intro">Hey! I'm Younus Khan</p>
             <h2 class="header__intro2">A Junior Software Developer based in the UK</h2>
-            <button class="header__button-projects">
+            <a href="#my-projects" class="header__button-projects">
                 Take a look at my work
                 <!--<i class="fa-solid fa-turn-down"></i>-->
-            </button>
+            </a>
         </header>
 
         <!--------- ABOUT ME ---------->
@@ -58,27 +58,27 @@
             <h3 class="tech-skills">Technical Skills</h3>
 
             <div class="skills-container">
-                <div class="github-icon">
+                <div id="github" class="github-icon">
                     <i class="icons fa-brands fa-git-alt"></i>
                     <p class="icons-name">Github</p>
                 </div>
-                <div class="html-icon">
+                <div id="html" class="html-icon">
                     <i class="icons fa-brands fa-html5"></i>
                     <p class="icons-name">HTML5</p>
                 </div>
-                <div class="css-icon">
+                <div id="css" class="css-icon">
                     <i class="icons fa-brands fa-css3-alt"></i>
                     <p class="icons-name">CSS3</p>
                 </div>
-                <div class="js-icon">
+                <div id="js" class="js-icon">
                     <i class="icons fa-brands fa-js-square"></i>
                     <p class="icons-name">JavaScript</p>
                 </div>
-                <div class="scss-icon">
+                <div id="scss" class="scss-icon">
                     <i class="icons fa-brands fa-sass"></i>
                     <p class="icons-name">SCSS</p>
                 </div>
-                <div class="bem-icon svg-icon">
+                <div id="bem" class="bem-icon svg-icon">
                     <svg class="icons" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0 10.3319H15.4301V15.8951H0V10.3319ZM0 0H15.4301V5.56321H0V0ZM27.6839 20.5842H0V26.1474H26.6465C29.5639 26.1474 36.3712 26.2267 38.8998 31.2337V28.1343C37.668 23.2066 34.0374 20.5842 27.6836 20.5842H27.6839ZM27.7484 30.9158H0V36.479H26.6465C33.1297 36.479 37.2142 36.7969 38.8998 37.9097V35.4458C37.603 31.5516 32.1572 30.9158 27.7486 30.9158H27.7484ZM27.6839 57.1425H0V51.5793H26.6465C29.5639 51.5793 36.3712 51.4999 38.8998 46.4929V49.5923C37.668 54.52 34.0374 57.1425 27.6836 57.1425H27.6839ZM27.7484 46.8109H0V41.2477H26.6465C33.1297 41.2477 37.2142 40.9297 38.8998 39.817V42.2808C37.603 46.175 32.1572 46.8109 27.7486 46.8109H27.7484ZM45.6424 66.7592H66V63.3415H46.2258C44.4752 63.3415 40.3263 63.2622 38.8351 60.3215V62.2291C39.5482 65.1695 41.7525 66.7592 45.6424 66.7592ZM45.5776 60.4805H65.9353V57.0631H46.2258C42.2709 57.0631 39.8073 56.9042 38.8348 56.189V57.699C39.6126 60.0832 42.9191 60.4805 45.5774 60.4805H45.5776Z"
@@ -86,15 +86,15 @@
                     </svg>
                     <p class="icons-name">BEM</p>
                 </div>
-                <div class="react-icon">
+                <div id="react" class="react-icon">
                     <i class="icons fa-brands fa-react"></i>
                     <p class="icons-name">React</p>
                 </div>
-                <div class="java-icon">
+                <div id="java" class="java-icon">
                     <i class="icons fa-brands fa-java"></i>
                     <p class="icons-name">Java</p>
                 </div>
-                <div class="springboot-icon svg-icon">
+                <div id="springboot" class="springboot-icon svg-icon">
                     <svg class="icons" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M54.615 44.176C47.208 54.043 31.392 50.713 21.249 51.19C21.249 51.19 19.452 51.292 17.646 51.589C17.646 51.589 18.33 51.298 19.203 50.995C26.325 48.532 29.691 48.037 34.02 45.814C42.15 41.65 50.244 32.575 51.891 23.149C48.795 32.215 39.381 40.018 30.81 43.186C24.945 45.352 14.334 47.458 14.331 47.458C14.1868 47.3842 14.0438 47.3082 13.902 47.23C6.687 43.72 6.477 28.09 19.584 23.053C25.332 20.845 30.825 22.057 37.038 20.578C43.662 19.003 51.336 14.038 54.453 7.54603C57.948 17.92 62.148 34.144 54.615 44.176ZM54.741 4.33603C53.903 6.34527 52.8306 8.24846 51.546 10.006C48.7535 7.12796 45.4115 4.84008 41.7181 3.27809C38.0246 1.71611 34.0551 0.91185 30.045 0.913026C13.476 0.913026 3.28287e-06 14.389 3.28287e-06 30.955C-0.00193143 35.0873 0.8513 39.1753 2.50603 42.9618C4.16075 46.7483 6.58116 50.1514 9.615 52.957L10.275 53.539C9.79394 53.0572 9.52393 52.404 9.52435 51.7231C9.52477 51.0422 9.79559 50.3893 10.2773 49.9081C10.7589 49.4268 11.412 49.1565 12.0929 49.1567C12.7738 49.1568 13.4267 49.4274 13.9082 49.9088C14.3897 50.3903 14.6602 51.0433 14.6604 51.7241C14.6605 52.405 14.3902 53.0581 13.909 53.5398C13.4277 54.0214 12.7748 54.2923 12.0939 54.2927C11.4131 54.2931 10.7599 54.0231 10.278 53.542L10.725 53.938C16.1262 58.5044 22.9722 61.0068 30.045 61C45.879 61 58.884 48.676 59.997 33.124C60.819 25.507 58.569 15.835 54.741 4.33603Z"
@@ -102,15 +102,15 @@
                     </svg>
                     <p class="icons-name">Spring Boot</p>
                 </div>
-                <div class="python-icon">
+                <div id="python" class="python-icon">
                     <i class="icons fa-brands fa-python"></i>
                     <p class="icons-name">Python</p>
                 </div>
-                <div class="swift-icon">
+                <div id="swift" class="swift-icon">
                     <i class="icons fa-brands fa-swift"></i>
                     <p class="icons-name">Swift</p>
                 </div>
-                <div class="sql-icon svg-icon">
+                <div id="sql" class="sql-icon svg-icon">
                     <svg class="icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 548.29 548.291"
                         style="enable-background:new 0 0 548.29 548.291;" xml:space="preserve">
@@ -134,6 +134,18 @@
                     V520.962z M475.387,377.428h-99.455V218.231h36.158v128.97h63.297V377.428z" />
                     </svg>
                     <p class="icons-name">SQL</p>
+                </div>
+            </div>
+        </section>
+
+        <!-------- MY PROJECTS ---------->
+
+        <section id="my-projects" class="projects">
+            <h3>My Projects</h3>
+            <div class="projects__client-project">
+                <!--<img src="./images/Screenshot 2022-05-13 at 17.11.09.png" alt="Preview of client project">-->
+                <div>
+                    <a href="#react">REACT</a>
                 </div>
             </div>
         </section>

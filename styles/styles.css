@@ -49,7 +49,7 @@ nav .name-icon .fa-code {
   margin: 0 10% 0 10%;
 }
 .header__button-projects {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
   margin: 10% 10% 70px 10%;
   padding: 5% 10%;
@@ -58,6 +58,7 @@ nav .name-icon .fa-code {
   border-radius: 8px;
   background-color: #50e2e4;
   box-shadow: 5px 5px;
+  text-decoration: none;
 }
 
 /*-------------------- ABOUT ME ---------------------*/
