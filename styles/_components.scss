@@ -155,7 +155,12 @@
             align-self: flex-start;
             padding: 0 0 10px 10px;
             width: 60%;
-            @include flexPush
+            @include flexPush;
+            
+            &__links {
+                text-decoration: none;
+                font-weight: 600;
+            }
         }
     }
 }
