@@ -206,22 +206,22 @@ main {
   color: #272643;
 }
 .footer__links {
-  padding: 40px 0 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 40px 20px 20px 20px;
+  font-weight: 700;
 }
 .footer__links__icon {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
+  font-size: 14px;
   padding: 15px;
   background-color: #50e2e4;
   border-radius: 50%;
   margin: 5px;
+  font-style: normal;
+}
+.footer__links #icon1 {
+  padding: 13px 12px 13px 12px;
+}
+.footer__links #icon2 {
+  padding: 15px 16.5px 15px 16.5px;
 }
 .footer__email {
   text-decoration: none;
