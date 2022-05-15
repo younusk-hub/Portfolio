@@ -115,6 +115,7 @@
     background-color: #50e2e4;
     box-shadow: 5px 5px;
     text-decoration: none;
+    text-align: center;
   }
 
   /*-------------------- ABOUT ME (MOBILE) ---------------------*/
@@ -132,7 +133,7 @@
     font-size: 30px;
   }
   .about-me__image {
-    width: 300px;
+    width: 80%;
     padding-bottom: 40px;
   }
   .about-me__info {
@@ -251,26 +252,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 85%;
     background-color: #F8FAFA;
     margin: 10px 0;
   }
   .header__intro {
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 500;
     color: #8C9DB1;
-    margin: 70px 10% 0 10%;
+    margin: 100px 10% 30px 10%;
   }
   .header__intro2 {
-    font-size: 50px;
+    font-size: 4em;
     margin: 0 10% 0 10%;
+    text-align: center;
   }
   .header__button-projects {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bolder;
-    margin: 10% 10% 70px 10%;
-    padding: 5% 10%;
+    margin: 5% 10% 100px 10%;
+    padding: 20px 30px;
     align-self: center;
     border: 2px solid #272643;
     border-radius: 10px;
@@ -412,7 +414,6 @@ main {
   align-items: center;
   flex-direction: column;
   padding: 10px 0;
-  width: 100%;
 }
 
 .footer {
