@@ -1,199 +1,418 @@
 /*--------------- FONTS --------------- */
 /*--------------- COLORS --------------- */
 /*---------------- FLEXBOX ----------------- */
-/*--------------- NAVIGATION -----------------*/
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  font-size: 20px;
+/*---------------------------------- MOBILE --------------------------------------------*/
+@media screen and (max-width: 520px) {
+  /*--------------- NAVIGATION (MOBILE) -----------------*/
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #F8FAFA;
+  }
+  nav .name-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .name-icon h1 {
+    padding: 0 0 0 15px;
+  }
+  nav .name-icon .fa-code {
+    color: #50e2e4;
+  }
+  nav .menu__tabs {
+    display: none;
+  }
 }
-nav .name-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*---------------------------------- TABLET & PC --------------------------------------------*/
+@media screen and (min-width: 521px) {
+  /*--------------- NAVIGATION (TABLET & PC) -----------------*/
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #F8FAFA;
+    width: 100%;
+    height: 93px;
+  }
+  nav .name-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .name-icon h1 {
+    padding: 0 15px 0 15px;
+  }
+  nav .name-icon .fa-code {
+    color: #50e2e4;
+  }
+  nav .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    width: 460px;
+  }
+  nav .menu .fa-solid {
+    display: none;
+  }
+  nav .menu__tabs {
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  nav .menu #menu__button {
+    padding: 10px 10px;
+    border: 2px solid #272643;
+    border-radius: 10px;
+    background-color: #50e2e4;
+    box-shadow: 2px 2px;
+  }
 }
-nav .name-icon h1 {
-  padding: 0 0 0 15px;
-}
-nav .name-icon .fa-code {
-  color: #50e2e4;
-}
-
 * {
   margin: 0;
   padding: 0%;
+  box-sizing: border-box;
   color: #272643;
 }
 
-/*--------------------- HEADER ---------------------*/
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 85%;
-  background-color: #F8FAFA;
-  margin: 10px 0;
-}
-.header__intro {
-  font-size: 23px;
-  font-weight: 500;
-  color: #8C9DB1;
-  margin: 70px 10% 0 10%;
-}
-.header__intro2 {
-  font-size: 50px;
-  margin: 0 10% 0 10%;
-}
-.header__button-projects {
-  font-size: 18px;
-  font-weight: bolder;
-  margin: 10% 10% 70px 10%;
-  padding: 5% 10%;
-  align-self: center;
-  border: 2px solid #272643;
-  border-radius: 8px;
-  background-color: #50e2e4;
-  box-shadow: 5px 5px;
-  text-decoration: none;
-}
+/*--------------------------------------- MOBILE ------------------------------------------------*/
+@media screen and (max-width: 520px) {
+  /*--------------------- HEADER (MOBILE) ---------------------*/
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85%;
+    background-color: #F8FAFA;
+    margin: 10px 0;
+  }
+  .header__intro {
+    font-size: 23px;
+    font-weight: 500;
+    color: #8C9DB1;
+    margin: 70px 10% 0 10%;
+  }
+  .header__intro2 {
+    font-size: 50px;
+    margin: 0 10% 0 10%;
+  }
+  .header__button-projects {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 10% 10% 70px 10%;
+    padding: 5% 10%;
+    align-self: center;
+    border: 2px solid #272643;
+    border-radius: 10px;
+    background-color: #50e2e4;
+    box-shadow: 5px 5px;
+    text-decoration: none;
+  }
 
-/*-------------------- ABOUT ME ---------------------*/
-.about-me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 85%;
-  background-color: #F8FAFA;
-  margin: 10px 0;
-}
-.about-me__title {
-  padding: 40px;
-  font-size: 30px;
-}
-.about-me__image {
-  width: 300px;
-  padding-bottom: 40px;
-}
-.about-me__info {
-  font-size: 18px;
-  padding: 0 5% 20px 5%;
-}
+  /*-------------------- ABOUT ME (MOBILE) ---------------------*/
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    background-color: #F8FAFA;
+    margin: 10px 0;
+  }
+  .about-me__title {
+    padding: 40px;
+    font-size: 30px;
+  }
+  .about-me__image {
+    width: 300px;
+    padding-bottom: 40px;
+  }
+  .about-me__info {
+    font-size: 18px;
+    padding: 0 5% 20px 5%;
+  }
 
-/*--------------- TECHNICAL SKILLS -------------------*/
-.skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 85%;
-  background-color: #F8FAFA;
-  margin: 10px 0;
-}
-.skills__title {
-  padding: 40px;
-  font-size: 30px;
-}
-.skills .skills-container {
-  width: 85%;
-  padding-bottom: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 50px 10px;
-  grid-template-areas: "github-icon html-icon css-icon" "js-icon scss-icon bem-icon" "react-icon java-icon springboot-icon" "python-icon swift-icon sql-icon";
-}
-.skills .skills-container .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #272643;
-  height: 30px;
-}
-.skills .skills-container .svg-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  fill: #272643;
-}
-.skills .skills-container .icons-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  color: #272643;
-  padding-top: 10px;
-}
+  /*--------------- TECHNICAL SKILLS (MOBILE) -------------------*/
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    background-color: #F8FAFA;
+    margin: 10px 0;
+  }
+  .skills__title {
+    padding: 40px;
+    font-size: 30px;
+  }
+  .skills .skills-container {
+    width: 85%;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 50px 10px;
+    grid-template-areas: "github-icon html-icon css-icon" "js-icon scss-icon bem-icon" "react-icon java-icon springboot-icon" "python-icon swift-icon sql-icon";
+  }
+  .skills .skills-container .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #272643;
+    height: 30px;
+  }
+  .skills .skills-container .svg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    fill: #272643;
+  }
+  .skills .skills-container .icons-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #272643;
+    padding-top: 10px;
+  }
 
-/*----------------------- MY PROJECTS ---------------------------*/
-.my-projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 85%;
-  background-color: #F8FAFA;
-  margin: 10px 0;
-  /*------------- PROJECTS CARDS ------------*/
+  /*----------------------- MY PROJECTS (MOBILE) ---------------------------*/
+  .my-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    background-color: #F8FAFA;
+    margin: 10px 0;
+    /*------- PROJECTS CARDS (MOBILE) -------*/
+  }
+  .my-projects__title {
+    padding: 40px;
+    font-size: 30px;
+  }
+  .my-projects #project4, .my-projects #project5, .my-projects #project6 {
+    display: none;
+  }
+  .my-projects .project {
+    font-size: 18px;
+    padding: 0 5% 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .my-projects .project__image {
+    width: 97%;
+  }
+  .my-projects .project__skills {
+    align-self: flex-start;
+    padding: 10px;
+    text-decoration: none;
+    color: #50e2e4;
+  }
+  .my-projects .project__title {
+    align-self: flex-start;
+    font-size: 30px;
+    padding: 0 0 10px 10px;
+  }
+  .my-projects .project__info {
+    padding: 0 0 10px 10px;
+  }
+  .my-projects .project__code-preview {
+    align-self: flex-start;
+    padding: 0 0 10px 10px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .my-projects .project__code-preview__links {
+    text-decoration: none;
+    font-weight: 600;
+  }
 }
-.my-projects__title {
-  padding: 40px;
-  font-size: 30px;
-}
-.my-projects #project4, .my-projects #project5, .my-projects #project6 {
-  display: none;
-}
-.my-projects .project {
-  font-size: 18px;
-  padding: 0 5% 20px 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.my-projects .project__image {
-  width: 97%;
-}
-.my-projects .project__skills {
-  align-self: flex-start;
-  padding: 10px;
-  text-decoration: none;
-  color: #50e2e4;
-}
-.my-projects .project__title {
-  align-self: flex-start;
-  font-size: 30px;
-  padding: 0 0 10px 10px;
-}
-.my-projects .project__info {
-  padding: 0 0 10px 10px;
-}
-.my-projects .project__code-preview {
-  align-self: flex-start;
-  padding: 0 0 10px 10px;
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.my-projects .project__code-preview__links {
-  text-decoration: none;
-  font-weight: 600;
-}
+/*--------------------------------------- TABLET ------------------------------------------------*/
+@media screen and (min-width: 521px) {
+  /*--------------------- HEADER (TABLET) ---------------------*/
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85%;
+    background-color: #F8FAFA;
+    margin: 10px 0;
+  }
+  .header__intro {
+    font-size: 23px;
+    font-weight: 500;
+    color: #8C9DB1;
+    margin: 70px 10% 0 10%;
+  }
+  .header__intro2 {
+    font-size: 50px;
+    margin: 0 10% 0 10%;
+  }
+  .header__button-projects {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 10% 10% 70px 10%;
+    padding: 5% 10%;
+    align-self: center;
+    border: 2px solid #272643;
+    border-radius: 10px;
+    background-color: #50e2e4;
+    box-shadow: 5px 5px;
+    text-decoration: none;
+  }
 
+  /*-------------------- ABOUT ME (TABLET) ---------------------*/
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    background-color: #F8FAFA;
+    margin: 10px 0;
+  }
+  .about-me__title {
+    padding: 40px;
+    font-size: 30px;
+  }
+  .about-me__image {
+    width: 300px;
+    padding-bottom: 40px;
+  }
+  .about-me__info {
+    font-size: 18px;
+    padding: 0 5% 20px 5%;
+  }
+
+  /*--------------- TECHNICAL SKILLS (TABLET) -------------------*/
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    background-color: #F8FAFA;
+    margin: 10px 0;
+  }
+  .skills__title {
+    padding: 40px;
+    font-size: 30px;
+  }
+  .skills .skills-container {
+    width: 85%;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 50px 10px;
+    grid-template-areas: "github-icon html-icon css-icon" "js-icon scss-icon bem-icon" "react-icon java-icon springboot-icon" "python-icon swift-icon sql-icon";
+  }
+  .skills .skills-container .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #272643;
+    height: 30px;
+  }
+  .skills .skills-container .svg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    fill: #272643;
+  }
+  .skills .skills-container .icons-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #272643;
+    padding-top: 10px;
+  }
+
+  /*----------------------- MY PROJECTS (TABLET) ---------------------------*/
+  .my-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    background-color: #F8FAFA;
+    margin: 10px 0;
+    /*------- PROJECTS CARDS (TABLET) -------*/
+  }
+  .my-projects__title {
+    padding: 40px;
+    font-size: 30px;
+  }
+  .my-projects #project4, .my-projects #project5, .my-projects #project6 {
+    display: none;
+  }
+  .my-projects .project {
+    font-size: 18px;
+    padding: 0 5% 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .my-projects .project__image {
+    width: 97%;
+  }
+  .my-projects .project__skills {
+    align-self: flex-start;
+    padding: 10px;
+    text-decoration: none;
+    color: #50e2e4;
+  }
+  .my-projects .project__title {
+    align-self: flex-start;
+    font-size: 30px;
+    padding: 0 0 10px 10px;
+  }
+  .my-projects .project__info {
+    padding: 0 0 10px 10px;
+  }
+  .my-projects .project__code-preview {
+    align-self: flex-start;
+    padding: 0 0 10px 10px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .my-projects .project__code-preview__links {
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
 /*--------------- MAIN (CONTAINER) ---------------*/
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .footer {

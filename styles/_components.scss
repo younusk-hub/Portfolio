@@ -1,166 +1,341 @@
 @use "./variables" as *;
 @use "./mixin" as *;
 
-/*--------------------- HEADER ---------------------*/
+/*--------------------------------------- MOBILE ------------------------------------------------*/
 
-.header {
-    @include flexCenter;
-    flex-direction: column;
-    align-items: flex-start;
-    @include newComp;
+@media screen and (max-width: 520px) {
 
-    &__intro {
-        font-size: 23px;
-        font-weight: 500;
-        color: $fourth-color;
-        margin: 70px 10% 0 10%;
-    }
+    /*--------------------- HEADER (MOBILE) ---------------------*/
 
-    &__intro2 {
-        font-size: 50px;
-        margin: 0 10% 0 10%;
-    }
-    
-    &__button-projects {
-        font-size: 18px;
-        font-weight: bolder;
-        margin: 10% 10% 70px 10%;
-        padding: 5% 10%;
-        align-self: center;
-        border: 2px solid $secondary-color;
-        border-radius: 8px;
-        background-color: $primary-color;
-        box-shadow: 5px 5px;
-        text-decoration: none;
-    }
-}
-
-/*-------------------- ABOUT ME ---------------------*/
-
-.about-me {
-    @include flexCenter;
-    flex-direction: column;
-    @include newComp;
-
-    &__title {
-        padding: 40px;
-        font-size: 30px;
-    }
-
-    &__image {
-        width: 300px;
-        padding-bottom: 40px;
-    }
-
-    &__info {
-        font-size: 18px;
-        padding: 0 5% 20px 5%;
-    }
-}
-
-/*--------------- TECHNICAL SKILLS -------------------*/
-
-.skills {
-    @include flexCenter;
-    flex-direction: column;
-    @include newComp;
-
-    &__title {
-        padding: 40px;
-        font-size: 30px;
-    }
-
-    .skills-container {
-        
-        width: 85%;
-        padding-bottom: 40px;
-
-        .icons  {
-            @include flexCenter;
-            font-size: 30px;
-            color: $secondary-color;
-            height: 30px;
-        }
-        .svg-icon {
-            @include flexCenter;   
-            flex-direction: column;
-            fill: $secondary-color;
-        }
-
-        .icons-name {
-            @include flexCenter;
-            font-size: 15px;
-            color: $secondary-color; 
-            padding-top: 10px;
-        }
-
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr; 
-        gap: 50px 10px; 
-        grid-template-areas: 
-        "github-icon html-icon css-icon"
-        "js-icon scss-icon bem-icon"
-        "react-icon java-icon springboot-icon"
-        "python-icon swift-icon sql-icon";
-    }
-}
-
-/*----------------------- MY PROJECTS ---------------------------*/
-
-.my-projects {
-    @include flexCenter;
-    flex-direction: column;
-    @include newComp;
-
-    &__title {
-        padding: 40px;
-        font-size: 30px;
-    }
-
-    #project4, #project5, #project6 {
-        display: none;
-    }
-
-    /*------------- PROJECTS CARDS ------------*/
-
-    .project {
-        font-size: 18px;
-        padding: 0 5% 20px 5%;
+    .header {
         @include flexCenter;
         flex-direction: column;
+        align-items: flex-start;
+        @include newComp;
 
-        &__image {
-            width: 97%;  
+        &__intro {
+            font-size: 23px;
+            font-weight: 500;
+            color: $fourth-color;
+            margin: 70px 10% 0 10%;
         }
 
-        &__skills {
-            align-self: flex-start;
-            padding: 10px;
+        &__intro2 {
+            font-size: 50px;
+            margin: 0 10% 0 10%;
+        }
+        
+        &__button-projects {
+            font-size: 18px;
+            font-weight: bolder;
+            margin: 10% 10% 70px 10%;
+            padding: 5% 10%;
+            align-self: center;
+            border: 2px solid $secondary-color;
+            border-radius: 10px;
+            background-color: $primary-color;
+            box-shadow: 5px 5px;
             text-decoration: none;
-            color: $primary-color;
         }
+    }
+
+    /*-------------------- ABOUT ME (MOBILE) ---------------------*/
+
+    .about-me {
+        @include flexCenter;
+        flex-direction: column;
+        @include newComp;
 
         &__title {
-            align-self: flex-start;
+            padding: 40px;
             font-size: 30px;
-            padding: 0 0 10px 10px;
+        }
+
+        &__image {
+            width: 300px;
+            padding-bottom: 40px;
         }
 
         &__info {
-            padding: 0 0 10px 10px;
+            font-size: 18px;
+            padding: 0 5% 20px 5%;
+        }
+    }
+
+    /*--------------- TECHNICAL SKILLS (MOBILE) -------------------*/
+
+    .skills {
+        @include flexCenter;
+        flex-direction: column;
+        @include newComp;
+
+        &__title {
+            padding: 40px;
+            font-size: 30px;
         }
 
-        &__code-preview {
-            align-self: flex-start;
-            padding: 0 0 10px 10px;
-            width: 60%;
-            @include flexPush;
+        .skills-container {
             
-            &__links {
+            width: 85%;
+            padding-bottom: 40px;
+
+            .icons  {
+                @include flexCenter;
+                font-size: 30px;
+                color: $secondary-color;
+                height: 30px;
+            }
+            .svg-icon {
+                @include flexCenter;   
+                flex-direction: column;
+                fill: $secondary-color;
+            }
+
+            .icons-name {
+                @include flexCenter;
+                font-size: 15px;
+                color: $secondary-color; 
+                padding-top: 10px;
+            }
+
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr; 
+            gap: 50px 10px; 
+            grid-template-areas: 
+            "github-icon html-icon css-icon"
+            "js-icon scss-icon bem-icon"
+            "react-icon java-icon springboot-icon"
+            "python-icon swift-icon sql-icon";
+        }
+    }
+
+    /*----------------------- MY PROJECTS (MOBILE) ---------------------------*/
+
+    .my-projects {
+        @include flexCenter;
+        flex-direction: column;
+        @include newComp;
+
+        &__title {
+            padding: 40px;
+            font-size: 30px;
+        }
+
+        #project4, #project5, #project6 {
+            display: none;
+        }
+
+        /*------- PROJECTS CARDS (MOBILE) -------*/
+
+        .project {
+            font-size: 18px;
+            padding: 0 5% 20px 5%;
+            @include flexCenter;
+            flex-direction: column;
+
+            &__image {
+                width: 97%;  
+            }
+
+            &__skills {
+                align-self: flex-start;
+                padding: 10px;
                 text-decoration: none;
-                font-weight: 600;
+                color: $primary-color;
+            }
+
+            &__title {
+                align-self: flex-start;
+                font-size: 30px;
+                padding: 0 0 10px 10px;
+            }
+
+            &__info {
+                padding: 0 0 10px 10px;
+            }
+
+            &__code-preview {
+                align-self: flex-start;
+                padding: 0 0 10px 10px;
+                width: 60%;
+                @include flexPush;
+                
+                &__links {
+                    text-decoration: none;
+                    font-weight: 600;
+                }
             }
         }
     }
 }
+
+/*--------------------------------------- TABLET ------------------------------------------------*/
+
+@media screen and (min-width: 521px) {
+
+    /*--------------------- HEADER (TABLET) ---------------------*/
+
+    .header {
+        @include flexCenter;
+        flex-direction: column;
+        align-items: flex-start;
+        @include newComp;
+
+        &__intro {
+            font-size: 23px;
+            font-weight: 500;
+            color: $fourth-color;
+            margin: 70px 10% 0 10%;
+        }
+
+        &__intro2 {
+            font-size: 50px;
+            margin: 0 10% 0 10%;
+        }
+        
+        &__button-projects {
+            font-size: 18px;
+            font-weight: bolder;
+            margin: 10% 10% 70px 10%;
+            padding: 5% 10%;
+            align-self: center;
+            border: 2px solid $secondary-color;
+            border-radius: 10px;
+            background-color: $primary-color;
+            box-shadow: 5px 5px;
+            text-decoration: none;
+        }
+    }
+
+    /*-------------------- ABOUT ME (TABLET) ---------------------*/
+
+    .about-me {
+        @include flexCenter;
+        flex-direction: column;
+        @include newComp;
+
+        &__title {
+            padding: 40px;
+            font-size: 30px;
+        }
+
+        &__image {
+            width: 300px;
+            padding-bottom: 40px;
+        }
+
+        &__info {
+            font-size: 18px;
+            padding: 0 5% 20px 5%;
+        }
+    }
+
+    /*--------------- TECHNICAL SKILLS (TABLET) -------------------*/
+
+    .skills {
+        @include flexCenter;
+        flex-direction: column;
+        @include newComp;
+
+        &__title {
+            padding: 40px;
+            font-size: 30px;
+        }
+
+        .skills-container {
+            
+            width: 85%;
+            padding-bottom: 40px;
+
+            .icons  {
+                @include flexCenter;
+                font-size: 30px;
+                color: $secondary-color;
+                height: 30px;
+            }
+            .svg-icon {
+                @include flexCenter;   
+                flex-direction: column;
+                fill: $secondary-color;
+            }
+
+            .icons-name {
+                @include flexCenter;
+                font-size: 15px;
+                color: $secondary-color; 
+                padding-top: 10px;
+            }
+
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr; 
+            gap: 50px 10px; 
+            grid-template-areas: 
+            "github-icon html-icon css-icon"
+            "js-icon scss-icon bem-icon"
+            "react-icon java-icon springboot-icon"
+            "python-icon swift-icon sql-icon";
+        }
+    }
+
+    /*----------------------- MY PROJECTS (TABLET) ---------------------------*/
+
+    .my-projects {
+        @include flexCenter;
+        flex-direction: column;
+        @include newComp;
+
+        &__title {
+            padding: 40px;
+            font-size: 30px;
+        }
+
+        #project4, #project5, #project6 {
+            display: none;
+        }
+
+        /*------- PROJECTS CARDS (TABLET) -------*/
+
+        .project {
+            font-size: 18px;
+            padding: 0 5% 20px 5%;
+            @include flexCenter;
+            flex-direction: column;
+
+            &__image {
+                width: 97%;  
+            }
+
+            &__skills {
+                align-self: flex-start;
+                padding: 10px;
+                text-decoration: none;
+                color: $primary-color;
+            }
+
+            &__title {
+                align-self: flex-start;
+                font-size: 30px;
+                padding: 0 0 10px 10px;
+            }
+
+            &__info {
+                padding: 0 0 10px 10px;
+            }
+
+            &__code-preview {
+                align-self: flex-start;
+                padding: 0 0 10px 10px;
+                width: 60%;
+                @include flexPush;
+                
+                &__links {
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
