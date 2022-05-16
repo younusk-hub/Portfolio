@@ -486,12 +486,13 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
+    justify-content: space-around;
     width: 100%;
     background-color: #272643;
     color: #272643;
   }
   .footer__links {
-    padding: 60px 3% 60px 0;
+    padding: 60px 0;
     font-weight: 900;
   }
   .footer__links__icon {
@@ -511,7 +512,7 @@ main {
   .footer__email {
     font-size: 20px;
     text-decoration: none;
-    padding: 60px 0 60px 3%;
+    padding: 60px 0;
     color: #50e2e4;
   }
 }/*# sourceMappingURL=styles.css.map */

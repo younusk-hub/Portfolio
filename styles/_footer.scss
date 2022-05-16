@@ -48,12 +48,13 @@
     .footer {
         @include flexPush;
         flex-direction: row-reverse;
+        justify-content: space-around;
         width: 100%;
         background-color: $secondary-color;
         color: $secondary-color;
 
         &__links {
-            padding: 60px 3% 60px 0;
+            padding: 60px 0;
             font-weight: 900;
 
             &__icon {
@@ -77,7 +78,7 @@
         &__email {
             font-size: 20px;
             text-decoration: none;
-            padding: 60px 0 60px 3%;
+            padding: 60px 0;
             color: $primary-color;
         }
     }
