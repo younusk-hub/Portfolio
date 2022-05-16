@@ -404,7 +404,7 @@
     padding: 0 5% 20px 5%;
   }
   .my-projects__container .project__image {
-    width: 97%;
+    width: 100%;
   }
   .my-projects__container .project__skills {
     align-self: flex-start;
