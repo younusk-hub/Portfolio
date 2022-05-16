@@ -43,23 +43,31 @@
     /*-------------------- ABOUT ME (MOBILE) ---------------------*/
 
     .about-me {
-        @include flexCenter;
-        flex-direction: column;
         @include newComp;
 
-        &__title {
-            padding: 40px;
-            font-size: 30px;
+        &__container {
+            @include flexCenter;
+            flex-direction: column;
+
+            &__title {
+                padding: 40px;
+                font-size: 30px;
+            }
+    
+            &__image {
+                width: 80%;
+                padding-bottom: 40px;
+    
+            }
+    
+            &__info {
+                font-size: 18px;
+                padding: 0 5% 20px 5%;
+            }
         }
 
-        &__image {
-            width: 80%;
-            padding-bottom: 40px;
-        }
-
-        &__info {
-            font-size: 18px;
-            padding: 0 5% 20px 5%;
+        &__container2 {
+            display: none;
         }
     }
 
@@ -73,6 +81,10 @@
         &__title {
             padding: 40px;
             font-size: 30px;
+        }
+
+        &__info {
+            display: none;
         }
 
         .skills-container {
@@ -213,23 +225,37 @@
     /*-------------------- ABOUT ME (TABLET) ---------------------*/
 
     .about-me {
-        @include flexCenter;
-        flex-direction: column;
         @include newComp;
+        @include flexPush;
 
-        &__title {
-            padding: 40px;
-            font-size: 30px;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            &__title {
+                text-align: center;
+                padding: 40px;
+                font-size: 30px;
+            }
+    
+            &__image {
+                display: none;
+            }
+    
+            &__info {
+                font-size: 18px;
+                padding: 0 5% 20px 5%;
+                
+            }
         }
 
-        &__image {
-            width: 300px;
-            padding-bottom: 40px;
-        }
+        &__container2 {
+            width: 50%;
 
-        &__info {
-            font-size: 18px;
-            padding: 0 5% 20px 5%;
+            &__image {
+                width: 100%;
+                padding: 40px 40px 40px 10px;
+            }
         }
     }
 
@@ -245,10 +271,20 @@
             font-size: 30px;
         }
 
+        &__info {
+            width: 90%;
+            font-size: 18px;
+            padding: 0 5% 60px 5%;
+            text-align: center;
+
+        }
+
         .skills-container {
-            
+            @include flexCenter;
+            //text-align: center;
             width: 85%;
             padding-bottom: 40px;
+            flex-wrap: wrap;
 
             .icons  {
                 @include flexCenter;
@@ -266,18 +302,8 @@
                 @include flexCenter;
                 font-size: 15px;
                 color: $secondary-color; 
-                padding-top: 10px;
+                padding: 10px 20px;
             }
-
-            display: grid; 
-            grid-template-columns: 1fr 1fr 1fr; 
-            grid-template-rows: 1fr 1fr 1fr 1fr; 
-            gap: 50px 10px; 
-            grid-template-areas: 
-            "github-icon html-icon css-icon"
-            "js-icon scss-icon bem-icon"
-            "react-icon java-icon springboot-icon"
-            "python-icon swift-icon sql-icon";
         }
     }
 
@@ -293,48 +319,55 @@
             font-size: 30px;
         }
 
-        #project4, #project5, #project6 {
-            display: none;
-        }
-
         /*------- PROJECTS CARDS (TABLET) -------*/
+        
+        &__container {
+            width: 97%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px 10px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "project1 project2 project3"
+            "prject4 project5 project6";
 
-        .project {
-            font-size: 18px;
-            padding: 0 5% 20px 5%;
-            @include flexCenter;
-            flex-direction: column;
+            .project {
+                font-size: 18px;
+                padding: 0 5% 20px 5%;
+            
+                &__image {
+                    width: 97%;  
+                }
 
-            &__image {
-                width: 97%;  
-            }
-
-            &__skills {
-                align-self: flex-start;
-                padding: 10px;
-                text-decoration: none;
-                color: $primary-color;
-            }
-
-            &__title {
-                align-self: flex-start;
-                font-size: 30px;
-                padding: 0 0 10px 10px;
-            }
-
-            &__info {
-                padding: 0 0 10px 10px;
-            }
-
-            &__code-preview {
-                align-self: flex-start;
-                padding: 0 0 10px 10px;
-                width: 60%;
-                @include flexPush;
-                
-                &__links {
+                &__skills {
+                    align-self: flex-start;
+                    text-align: center;
+                    padding: 10px;
                     text-decoration: none;
-                    font-weight: 600;
+                    color: $primary-color;
+                }
+
+                &__title {
+                    align-self: flex-start;
+                    font-size: 30px;
+                    padding: 0 0 10px 10px;
+                }
+
+                &__info {
+                    padding: 0 0 10px 10px;
+                }
+
+                &__code-preview {
+                    align-self: flex-start;
+                    padding: 0 0 10px 10px;
+                    width: 60%;
+                    @include flexPush;
+                    
+                    &__links {
+                        text-decoration: none;
+                        font-weight: 600;
+                    }
                 }
             }
         }

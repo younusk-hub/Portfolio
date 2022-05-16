@@ -120,25 +120,30 @@
 
   /*-------------------- ABOUT ME (MOBILE) ---------------------*/
   .about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 85%;
     background-color: #F8FAFA;
     margin: 10px 0;
   }
-  .about-me__title {
+  .about-me__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-me__container__title {
     padding: 40px;
     font-size: 30px;
   }
-  .about-me__image {
+  .about-me__container__image {
     width: 80%;
     padding-bottom: 40px;
   }
-  .about-me__info {
+  .about-me__container__info {
     font-size: 18px;
     padding: 0 5% 20px 5%;
+  }
+  .about-me__container2 {
+    display: none;
   }
 
   /*--------------- TECHNICAL SKILLS (MOBILE) -------------------*/
@@ -154,6 +159,9 @@
   .skills__title {
     padding: 40px;
     font-size: 30px;
+  }
+  .skills__info {
+    display: none;
   }
   .skills .skills-container {
     width: 85%;
@@ -283,25 +291,36 @@
 
   /*-------------------- ABOUT ME (TABLET) ---------------------*/
   .about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 85%;
     background-color: #F8FAFA;
     margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  .about-me__title {
+  .about-me__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .about-me__container__title {
+    text-align: center;
     padding: 40px;
     font-size: 30px;
   }
-  .about-me__image {
-    width: 300px;
-    padding-bottom: 40px;
+  .about-me__container__image {
+    display: none;
   }
-  .about-me__info {
+  .about-me__container__info {
     font-size: 18px;
     padding: 0 5% 20px 5%;
+  }
+  .about-me__container2 {
+    width: 50%;
+  }
+  .about-me__container2__image {
+    width: 100%;
+    padding: 40px 40px 40px 10px;
   }
 
   /*--------------- TECHNICAL SKILLS (TABLET) -------------------*/
@@ -318,14 +337,19 @@
     padding: 40px;
     font-size: 30px;
   }
+  .skills__info {
+    width: 90%;
+    font-size: 18px;
+    padding: 0 5% 60px 5%;
+    text-align: center;
+  }
   .skills .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 85%;
     padding-bottom: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 50px 10px;
-    grid-template-areas: "github-icon html-icon css-icon" "js-icon scss-icon bem-icon" "react-icon java-icon springboot-icon" "python-icon swift-icon sql-icon";
+    flex-wrap: wrap;
   }
   .skills .skills-container .icons {
     display: flex;
@@ -348,7 +372,7 @@
     align-items: center;
     font-size: 15px;
     color: #272643;
-    padding-top: 10px;
+    padding: 10px 20px;
   }
 
   /*----------------------- MY PROJECTS (TABLET) ---------------------------*/
@@ -366,35 +390,38 @@
     padding: 40px;
     font-size: 30px;
   }
-  .my-projects #project4, .my-projects #project5, .my-projects #project6 {
-    display: none;
+  .my-projects__container {
+    width: 97%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "project1 project2 project3" "prject4 project5 project6";
   }
-  .my-projects .project {
+  .my-projects__container .project {
     font-size: 18px;
     padding: 0 5% 20px 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
-  .my-projects .project__image {
+  .my-projects__container .project__image {
     width: 97%;
   }
-  .my-projects .project__skills {
+  .my-projects__container .project__skills {
     align-self: flex-start;
+    text-align: center;
     padding: 10px;
     text-decoration: none;
     color: #50e2e4;
   }
-  .my-projects .project__title {
+  .my-projects__container .project__title {
     align-self: flex-start;
     font-size: 30px;
     padding: 0 0 10px 10px;
   }
-  .my-projects .project__info {
+  .my-projects__container .project__info {
     padding: 0 0 10px 10px;
   }
-  .my-projects .project__code-preview {
+  .my-projects__container .project__code-preview {
     align-self: flex-start;
     padding: 0 0 10px 10px;
     width: 60%;
@@ -402,7 +429,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .my-projects .project__code-preview__links {
+  .my-projects__container .project__code-preview__links {
     text-decoration: none;
     font-weight: 600;
   }

@@ -28,7 +28,7 @@
         </div>
     </nav>
 
-    <!------------------------------------ MAIN ---------------------------------------->
+    <!------------------------------------ MAIN ----------------------------------------->
 
     <main>
 
@@ -46,20 +46,32 @@
         <!------------------- ABOUT ME -------------------->
 
         <section class="about-me">
-            <h3 class="about-me__title">About Me</h3>
-            <img class="about-me__image" src="./images/Screenshot 2022-05-12 at 16.58.54.png" alt="A picture of Younus">
-            <p class="about-me__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minus, praesentium
-                quam culpa consequatur
-                quibusdam laudantium? Alias quam ipsum odio, mollitia nobis doloribus animi delectus, explicabo
-                distinctio corporis iusto voluptatum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-                atque modi delectus? Voluptatum vero corrupti atque impedit amet dolores error ab voluptatibus eaque
-                repellendus! Ratione eum inventore laudantium perferendis modi?</p>
+            <div class="about-me__container">
+                <h3 class="about-me__container__title">About Me</h3>
+                <img class="about-me__container__image" src="./images/Screenshot 2022-05-12 at 16.58.54.png"
+                    alt="A picture of Younus">
+                <p class="about-me__container__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                    minus, praesentium
+                    quam culpa consequatur
+                    quibusdam laudantium? Alias quam ipsum odio, mollitia nobis doloribus animi delectus, explicabo
+                    distinctio corporis iusto voluptatum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+                    atque modi delectus? Voluptatum vero corrupti atque impedit amet dolores error ab voluptatibus eaque
+                    repellendus! Ratione eum inventore.</p>
+            </div>
+            <div class="about-me__container2">
+                <img class="about-me__container2__image" src="./images/Screenshot 2022-05-12 at 16.58.54.png"
+                    alt="A picture of Younus">
+            </div>
         </section>
 
         <!--------------- TECHNICAL SKILLS ----------------->
 
         <section id="tech-skills" class="skills">
             <h3 class="skills__title">Technical Skills</h3>
+
+            <p class="skills__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae. Error molestiae quia libero ipsam.
+                Eum dolore nisi est obcaecati, odio culpa repellat rerum nobis sit reiciendis? Iure, nihil assumenda.
+            </p>
 
             <div class="skills-container">
                 <div id="github" class="github-icon">
@@ -147,93 +159,101 @@
         <section id="work" class="my-projects">
             <h3 class="my-projects__title">My Projects</h3>
 
-            <!----- PROJECT 1 ---->
-            <div id="project1" class="project">
-                <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png" alt="Preview of client project">
-                <a class="project__skills" href="#tech-skills">REACT</a>
-                <h4 class="project__title">Client Project</h4>
-                <p class="project__info">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
-                    aspernatur dignissimos quaerat iusto.
-                </p>
-                <div class="project__code-preview">
-                    <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
-                    <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+            <div class="my-projects__container">
+                <!----- PROJECT 1 ---->
+                <div id="project1" class="project">
+                    <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png"
+                        alt="Preview of client project">
+                    <a class="project__skills" href="#tech-skills">REACT</a>
+                    <h4 class="project__title">Client Project</h4>
+                    <p class="project__info">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
+                        aspernatur dignissimos quaerat iusto.
+                    </p>
+                    <div class="project__code-preview">
+                        <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
+                        <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <!----- PROJECT 2 ---->
-            <div id="project2" class="project">
-                <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png" alt="Preview of client project">
-                <a class="project__skills" href="#tech-skills">JAVA, SPRING BOOT</a>
-                <h4 class="project__title">REST API</h4>
-                <p class="project__info">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
-                    aspernatur dignissimos quaerat iusto.
-                </p>
-                <div class="project__code-preview">
-                    <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
-                    <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                <!----- PROJECT 2 ---->
+                <div id="project2" class="project">
+                    <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png"
+                        alt="Preview of client project">
+                    <a class="project__skills" href="#tech-skills">JAVA, SPRING BOOT</a>
+                    <h4 class="project__title">REST API</h4>
+                    <p class="project__info">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
+                        aspernatur dignissimos quaerat iusto.
+                    </p>
+                    <div class="project__code-preview">
+                        <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
+                        <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <!----- PROJECT 3 ---->
-            <div id="project3" class="project">
-                <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png" alt="Preview of client project">
-                <a class="project__skills" href="#tech-skills">REACT</a>
-                <h4 class="project__title">Punk API</h4>
-                <p class="project__info">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
-                    aspernatur dignissimos quaerat iusto.
-                </p>
-                <div class="project__code-preview">
-                    <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
-                    <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                <!----- PROJECT 3 ---->
+                <div id="project3" class="project">
+                    <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png"
+                        alt="Preview of client project">
+                    <a class="project__skills" href="#tech-skills">REACT</a>
+                    <h4 class="project__title">Punk API</h4>
+                    <p class="project__info">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
+                        aspernatur dignissimos quaerat iusto.
+                    </p>
+                    <div class="project__code-preview">
+                        <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
+                        <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <!----- PROJECT 4 ---->
-            <div id="project4" class="project">
-                <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png" alt="Preview of client project">
-                <a class="project__skills" href="#tech-skills">REACT</a>
-                <h4 class="project__title">Client Project</h4>
-                <p class="project__info">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
-                    aspernatur dignissimos quaerat iusto.
-                </p>
-                <div class="project__code-preview">
-                    <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
-                    <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                <!----- PROJECT 4 ---->
+                <div id="project4" class="project">
+                    <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png"
+                        alt="Preview of client project">
+                    <a class="project__skills" href="#tech-skills">REACT</a>
+                    <h4 class="project__title">Client Project</h4>
+                    <p class="project__info">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
+                        aspernatur dignissimos quaerat iusto.
+                    </p>
+                    <div class="project__code-preview">
+                        <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
+                        <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <!----- PROJECT 5 ---->
-            <div id="project5" class="project">
-                <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png" alt="Preview of client project">
-                <a class="project__skills" href="#tech-skills">REACT</a>
-                <h4 class="project__title">Client Project</h4>
-                <p class="project__info">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
-                    aspernatur dignissimos quaerat iusto.
-                </p>
-                <div class="project__code-preview">
-                    <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
-                    <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                <!----- PROJECT 5 ---->
+                <div id="project5" class="project">
+                    <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png"
+                        alt="Preview of client project">
+                    <a class="project__skills" href="#tech-skills">REACT</a>
+                    <h4 class="project__title">Client Project</h4>
+                    <p class="project__info">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
+                        aspernatur dignissimos quaerat iusto.
+                    </p>
+                    <div class="project__code-preview">
+                        <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
+                        <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <!----- PROJECT 6 ---->
-            <div id="project6" class="project">
-                <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png" alt="Preview of client project">
-                <a class="project__skills" href="#tech-skills">REACT</a>
-                <h4 class="project__title">Client Project</h4>
-                <p class="project__info">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
-                    aspernatur dignissimos quaerat iusto.
-                </p>
-                <div class="project__code-preview">
-                    <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
-                    <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                <!----- PROJECT 6 ---->
+                <div id="project6" class="project">
+                    <img class="project__image" src="./images/Screenshot 2022-05-13 at 17.11.09.png"
+                        alt="Preview of client project">
+                    <a class="project__skills" href="#tech-skills">REACT</a>
+                    <h4 class="project__title">Client Project</h4>
+                    <p class="project__info">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores reiciendis iure dolorum
+                        aspernatur dignissimos quaerat iusto.
+                    </p>
+                    <div class="project__code-preview">
+                        <a class="project__code-preview__links" href="#">Code <i class="fa-solid fa-code"></i></a>
+                        <a class="project__code-preview__links" href="#">Preview <i class="fa-regular fa-eye"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -248,7 +268,7 @@
             <i href="#" class="footer__links__icon fa-brands fa-linkedin-in" id="icon2"></i>
             <i href="#" class="footer__links__icon" id="icon1">CV</i>
         </div>
-        
+
         <a class="footer__email" href="mailto:mohammadyounuskhan99@gmail.com">mohammadyounuskhan99@gmail.com</a>
     </footer>
 </body>
