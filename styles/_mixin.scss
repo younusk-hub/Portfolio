@@ -19,3 +19,9 @@
     background-color: $third-color;
     margin: 10px 0;
 }
+
+@mixin newTabletComp() {
+    width: 85%;
+    background-color: $third-color;
+    margin: 20px 0;
+}

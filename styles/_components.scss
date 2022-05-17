@@ -193,7 +193,7 @@
         @include flexCenter;
         flex-direction: column;
         align-items: center;
-        @include newComp;
+        @include newTabletComp;
 
         &__intro {
             font-size: 25px;
@@ -225,7 +225,7 @@
     /*-------------------- ABOUT ME (TABLET) ---------------------*/
 
     .about-me {
-        @include newComp;
+        @include newTabletComp;
         @include flexPush;
 
         &__container {
@@ -264,7 +264,7 @@
     .skills {
         @include flexCenter;
         flex-direction: column;
-        @include newComp;
+        @include newTabletComp;
 
         &__title {
             padding: 40px;
@@ -312,7 +312,7 @@
     .my-projects {
         @include flexCenter;
         flex-direction: column;
-        @include newComp;
+        @include newTabletComp;
 
         &__title {
             padding: 40px;

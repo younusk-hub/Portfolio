@@ -263,7 +263,7 @@
     align-items: center;
     width: 85%;
     background-color: #F8FAFA;
-    margin: 10px 0;
+    margin: 20px 0;
   }
   .header__intro {
     font-size: 25px;
@@ -293,7 +293,7 @@
   .about-me {
     width: 85%;
     background-color: #F8FAFA;
-    margin: 10px 0;
+    margin: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -331,7 +331,7 @@
     flex-direction: column;
     width: 85%;
     background-color: #F8FAFA;
-    margin: 10px 0;
+    margin: 20px 0;
   }
   .skills__title {
     padding: 40px;
@@ -383,7 +383,7 @@
     flex-direction: column;
     width: 85%;
     background-color: #F8FAFA;
-    margin: 10px 0;
+    margin: 20px 0;
     /*------- PROJECTS CARDS (TABLET) -------*/
   }
   .my-projects__title {
@@ -434,7 +434,7 @@
     font-weight: 600;
   }
 }
-/*--------------- MAIN (CONTAINER) ---------------*/
+/*-------------------- MAIN (CONTAINER) -----------------------*/
 main {
   display: flex;
   justify-content: center;
@@ -508,6 +508,9 @@ main {
     padding: 15px 16.5px 15px 16.5px;
   }
   .footer__email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     text-decoration: none;
     padding: 60px 0;
