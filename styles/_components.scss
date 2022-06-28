@@ -148,7 +148,7 @@
             flex-direction: column;
 
             &__image {
-                width: 97%;  
+                width: 97%;
             }
 
             &__skills {
@@ -232,6 +232,7 @@
             display: flex;
             flex-direction: column;
             width: 50%;
+            max-width: 500px;
             &__title {
                 text-align: center;
                 padding: 40px;
@@ -246,13 +247,15 @@
                 font-size: 18px;
                 padding: 0 5% 20px 5%;
                 
+                
             }
         }
 
         &__container2 {
             width: 50%;
-
+            max-width: 500px;
             &__image {
+                
                 width: 100%;
                 padding: 40px 40px 40px 10px;
             }
@@ -325,12 +328,12 @@
             width: 97%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr; //1fr
             gap: 10px 10px;
             grid-auto-flow: row;
             grid-template-areas:
-            "project1 project2 project3"
-            "prject4 project5 project6";
+            "project1 project2 project3";
+            // "prject4 project5 project6";
 
             .project {
                 font-size: 18px;

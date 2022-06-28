@@ -264,6 +264,7 @@
     width: 85%;
     background-color: #F8FAFA;
     margin: 20px 0;
+    max-width: 1200px;
   }
   .header__intro {
     font-size: 25px;
@@ -294,6 +295,7 @@
     width: 85%;
     background-color: #F8FAFA;
     margin: 20px 0;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -302,6 +304,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    max-width: 500px;
   }
   .about-me__container__title {
     text-align: center;
@@ -317,6 +320,7 @@
   }
   .about-me__container2 {
     width: 50%;
+    max-width: 500px;
   }
   .about-me__container2__image {
     width: 100%;
@@ -332,6 +336,7 @@
     width: 85%;
     background-color: #F8FAFA;
     margin: 20px 0;
+    max-width: 1200px;
   }
   .skills__title {
     padding: 40px;
@@ -384,6 +389,7 @@
     width: 85%;
     background-color: #F8FAFA;
     margin: 20px 0;
+    max-width: 1200px;
     /*------- PROJECTS CARDS (TABLET) -------*/
   }
   .my-projects__title {
@@ -394,10 +400,10 @@
     width: 97%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
-    grid-template-areas: "project1 project2 project3" "prject4 project5 project6";
+    grid-template-areas: "project1 project2 project3";
   }
   .my-projects__container .project {
     font-size: 18px;
